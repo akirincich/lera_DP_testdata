@@ -29,7 +29,7 @@
 RC=[];
 %%%%%%%%%%%%%%%% likely user defined parameters %%%%%%%%
 
-RC.SiteName='nwt';
+RC.SiteName='nwt';  %the site name on the site
 
 %%% What type of radar is it?  MK2 or 3
 RC.radar_type='MK2';
@@ -101,7 +101,7 @@ if strcmp(RC.radar_type,'MK2')==1
     RC.dds_setup.F1=F1;
     RC.dds_setup.dds=dds;
     RC.mt=mt;
-    RC.Fc=fr;
+    freq=fr;
     
 elseif strcmp(RC.radar_type,'MK3')==1
     RC.BIT_LENGTH=31;  %for an MK3 receiver, a 32 bit AD converter
