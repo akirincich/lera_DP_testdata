@@ -96,6 +96,7 @@ RC.dds_setup.F0=0;
 RC.dds_setup.F1=F1;
 RC.dds_setup.dds=dds;
 RC.mt=mt;
+RC.Fc=fr;
 
 elseif strcmp(RC.radar_type,'MK3')==1
     RC.BIT_LENGTH=31;  %for an MK3 receiver, a 32 bit AD converter    

@@ -47,11 +47,12 @@
 % Thus the 'bearing' of the array should be the direction of the x axis.
 %  (a change from vers. 1 of this script.
 %
-%   see below for additional details
+%   v1 see below for additional details
 %   created from lera_pattern_work_v4 on 
 %   11/23/2018
 %
-%
+%  v2   1/21/2019
+%      included measured pattern corrections  as adj_facts=[];
 % by
 % Anthony Kirincich
 % WHOI PO
@@ -61,7 +62,8 @@
 if strcmp(RC.SiteName,'nwt')==1;    %nantucket  LERA, installed on 6/2017
 
 %%% update for new orientation of math here, 
-Array_bearing=[147+90]; % based on bearing of 5 to 3 ant line. (see below)
+%Array_bearing=[147+90]; % based on bearing of 5 to 3 ant line. (see below)
+Array_bearing=[142+90]; % based on bearing of 5 to 3 ant line. (see below)
 % .                            and adjusted to line with x axis of ant
 %                              array, which should be along ants 1 to 7
 
@@ -237,6 +239,13 @@ mapper=[ 1  2;
 mapper_what='(1) ideal_pattern_ant# (2) array channel  (3) map to transform ideal # to channel 1-8';
 
 disp('NWTP:  Note that the cable mapping changed on 7/18/2017.  Are you using the correct map?')
+
+%%%%% for NWTP  %%%%% done on 01/21/2019
+meas_patt_date=datenum(2019,1,21,0,0,0);
+adj_facts =[ 1     1/1     1/1.5     1/1.3    1/2   1/3     1     1/1.25;
+              0    20       10         0      0+10     20     10        20];
+disp(['includes Measured Pattern corrections, made on: ' datestr(meas_patt_date)] )
+
 
 
 else ; disp('site name is not correct');

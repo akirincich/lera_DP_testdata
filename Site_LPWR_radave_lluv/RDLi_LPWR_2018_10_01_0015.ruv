@@ -21,7 +21,7 @@
 %AngularResolution: 1 Deg
 %SpatialResolution: 1 Deg
 %PatternType: Ideal
-%PatternDate: 2018 12 22 00 00 00
+%PatternDate: 2019 02 16 00 00 00
 %PatternResolution: 1.0 deg
 %PatternSmoothing: 1.0 deg
 %TransmitCenterFreqMHz: 16.112000
@@ -1524,7 +1524,7 @@
    -70.3060826  41.3413220  -1.801	0.054	 999.000	  1	 1      27.9626    -0.7322  	27.9722  	 91.5	1.801	   271.7  	14
 %TableEnd:
 %%
-%ProcessedTimeStamp: 2018 12 22  21 32 07 
+%ProcessedTimeStamp: 2019 02 16  14 13 04 
 %ProcessingTool: "HFR_DP_lera_spectra2radialmetric_process" 5.0
 %ProcessingTool: "lera_imageFOLs" 4.0
 %ProcessingTool: "HFR_DP_lera_music" 3.0

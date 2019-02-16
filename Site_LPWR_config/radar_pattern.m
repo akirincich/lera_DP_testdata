@@ -225,6 +225,17 @@ mapper_what='(1) ideal_pattern_ant# (2) array channel  (3) map to transform idea
  
 disp('LPWR:  Note that the antenna and cable map is the same, but map is flipped from NWTP')
 
+%%%%%%%%%%%%%%%%%%%%%%% add the measured pattern offsets here %%%%%%%%%%%%%
+%%%%%%%%%%   this is if you are doing a 1 point calibration, i.e. the 
+%%%%% for LPWR  %%%%% done on 02/15/2019
+ meas_patt_date=datenum(2019,2,16,0,0,0);
+%  adj_facts =[ 1/1   1/1.5    1/1.5     1/1    1/1   1/2     1/2   1/2;
+%               -30    -30      -35    -30    0     35    -0        30];
+  adj_facts =[ 1/1   1/1    1/1    1/1    1  1/1    1/1  1/1;
+               -0    -0    -0    -0    0     0    0    0];
+
+disp(['includes Measured Pattern corrections, made on: ' datestr(meas_patt_date)] )
+
 
 else ; disp('site name is not correct');
     adfasdasdfas
